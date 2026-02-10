@@ -14,6 +14,7 @@ def predict_solar_energy(temperature, sunlight_hours):
 
 # Predict water demand based on temperature and population
 def predict_water_demand(temperature, population):
+
     return 0.3 * population * temperature
 
 # AI Decision Agent
@@ -96,3 +97,7 @@ if st.button("🔍 Run AI Analysis"):
     ax[1].set_ylabel("Water (liters)")
 
     st.pyplot(fig)
+
+
+pip install streamlit matplotlib numpy
+streamlit run README.md
